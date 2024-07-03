@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="NhmK22CNT3LS10dbModelStoreContainer" CdmEntityContainer="NhmK22CNT3LS10dbEntities">
+    <EntitySetMapping Name="NhmAccounts">
+      <EntityTypeMapping TypeName="NhmK22CNT3LS10dbModel.NhmAccount">
+        <MappingFragment StoreEntitySet="NhmAccount">
+          <ScalarProperty Name="NhmID" ColumnName="NhmID" />
+          <ScalarProperty Name="NhmUserName" ColumnName="NhmUserName" />
+          <ScalarProperty Name="NhmPassword" ColumnName="NhmPassword" />
+          <ScalarProperty Name="NhmFullName" ColumnName="NhmFullName" />
+          <ScalarProperty Name="NhmEmail" ColumnName="NhmEmail" />
+          <ScalarProperty Name="NhmPhone" ColumnName="NhmPhone" />
+          <ScalarProperty Name="NhmActive" ColumnName="NhmActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="NhmK22CNT3LS10dbModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NhmAccount">
+    <Key>
+      <PropertyRef Name="NhmID" />
+    </Key>
+    <Property Name="NhmID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="NhmUserName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NhmPassword" Type="nvarchar" MaxLength="50" />
+    <Property Name="NhmFullName" Type="nvarchar" MaxLength="50" />
+    <Property Name="NhmEmail" Type="nvarchar" MaxLength="50" />
+    <Property Name="NhmPhone" Type="nvarchar" MaxLength="50" />
+    <Property Name="NhmActive" Type="bit" />
+  </EntityType>
+  <EntityContainer Name="NhmK22CNT3LS10dbModelStoreContainer">
+    <EntitySet Name="NhmAccount" EntityType="Self.NhmAccount" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

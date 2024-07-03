@@ -1,0 +1,64 @@
+﻿@model IEnumerable<NhmK22CNT3Lesson10Db.Models.NhmAccount>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_NhmLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.NhmUserName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhmPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhmFullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhmEmail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhmPhone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NhmActive)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhmUserName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhmPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhmFullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhmEmail)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhmPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NhmActive)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.NhmID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NhmID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NhmID })
+        </td>
+    </tr>
+}
+
+</table>

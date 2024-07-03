@@ -1,0 +1,67 @@
+﻿@model NhmK22CNT3Lesson10Db.Models.NhmAccount
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_NhmLayout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>NhmAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmActive)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.NhmID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

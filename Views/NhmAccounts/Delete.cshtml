@@ -1,0 +1,73 @@
+﻿@model NhmK22CNT3Lesson10Db.Models.NhmAccount
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_NhmLayout.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>NhmAccount</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmFullName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmFullName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NhmActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NhmActive)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
